@@ -1,0 +1,87 @@
+/* Fondo general de la ventana */
+QMainWindow {
+    background-color: #0F172A; 
+}
+
+/* Paneles de controles y simulación */
+QFrame#controlPanel, QFrame#simulationPanel {
+    background-color: #1E293B; 
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+/* Títulos y textos generales */
+QLabel {
+    color: #F8FAFC;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+}
+
+QLabel#titleLabel {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #334155;
+}
+
+/* -------------------------------------------
+   Botones - Estilo Científico Contrastante
+------------------------------------------- */
+QPushButton {
+    background-color: #F8FAFC; /* Blanco nítido */
+    color: #0F172A; /* Texto oscuro */
+    border: 2px solid #94A3B8;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #E2E8F0;
+    border: 2px solid #64748B;
+}
+
+QPushButton:pressed {
+    background-color: #CBD5E1;
+}
+
+/* Botón de exportar a Tracker (Contraste Invertido) */
+QPushButton#exportBtn {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    border: 2px solid #F8FAFC;
+}
+
+QPushButton#exportBtn:hover {
+    background-color: #1E293B;
+    border: 2px solid #CBD5E1;
+}
+
+/* Estilo para los Sliders (QSlider) */
+QSlider::groove:horizontal {
+    border-radius: 4px;
+    height: 6px;
+    background: #334155;
+}
+QSlider::handle:horizontal {
+    background: #F8FAFC;
+    width: 16px;
+    height: 16px;
+    margin: -5px 0;
+    border-radius: 8px;
+}
+
+/* Ocultar botones de incremento/decremento para mayor limpieza visual */
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    width: 0px;
+    border: none;
+}
+QDoubleSpinBox {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-weight: bold;
+}

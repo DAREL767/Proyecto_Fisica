@@ -1,0 +1,45 @@
+# =================
+# Entorno Virtual
+# =================
+venv/
+env/
+ENV/
+
+# =================
+# Caché de Python
+# =================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# =================
+# Archivos de IDEs y Editores (VS Code)
+# =================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =================
+# Sistemas Operativos
+# =================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =================
+# Archivos temporales o exportaciones (Simulaciones)
+# =================
+# Útil si tu script 'video_export.py' genera videos o registros temporales locales
+*.mp4
+*.avi
+*.mov
+*.log
